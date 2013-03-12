@@ -1,0 +1,10 @@
+User-agent: Baiduspider
+Disallow: /
+
+
+User-agent: baiduspider
+Disallow: /
+
+User-agent: *
+Disallow: 
+Crawl-delay: 3600
