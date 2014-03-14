@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+html {
+    height: 100%;
+    background: #987f63;
+    background: #140221;
+}
+html::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(imgs/ambient.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+    opacity: 1;
+}
+body {
+    font: 300 1.125rem/1.875rem "Open Sans", Lucida Grande, Lucida Sans Unicode, Veranda, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 25rem;
+    margin: -12rem 0 0 0;
+    margin: 0 0 0 0;
+    color: #fff;
+}
+.avatar {
+    position: absolute;
+    top: 0rem;
+    right: -26.5rem;
+    width: 16rem;
+    border-radius: 3rem;
+    border: .1rem solid white;
+    opacity: 0.7;
+}
+h1 {
+    font-size: 150%;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 2rem;
+}
+p { margin: 0 0 1.5em }
+a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+a:hover { color: #cdbd80; }
+@media (max-width: 992px) {
+    body {
+        top: 18%;
+        left: 50%;
+        margin-left: -12.5rem;
+    }
+    .avatar {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 0 2rem;
+        width: 13rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        margin: 5.5rem 1.2rem 0;
+        padding-bottom: 5.5rem;
+        font-size: 1rem;
+    }
+    .avatar {
+        width: 6rem;
+    }
+}
