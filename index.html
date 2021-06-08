@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Chuangbo Li</title>
   <meta charset="utf-8">
+  <title>Chuangbo Li</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="Chuangbo Li is a software developer.">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Chuangbo Li">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://chuangbo.li">
   <meta property="og:image" content="http://chuangbo.li/imgs/face.jpg">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300'>
+  <meta name="twitter:site" content="@chuangbo" />
+  <meta name="twitter:card" content="summary_large_image" />
   <style>
     html, body, div, span,
     h1, h2, h3, h4, h5, h6, p {
@@ -62,12 +63,18 @@
       border-bottom: 1px solid;
     }
     a:hover { color: #cdbd80; }
-    .icons .icon {
-      margin-right: 0.3rem;
+    .icons {
+      font-size: 1.125rem;
+      margin-left: -0.3rem;
+      opacity: 0.7;
+    }
+    .icons a {
+      display: inline-block;
+      padding: 0.3rem;
+      line-height: 1;
     }
     .icon {
       width: 1em; height: 1em;
-      vertical-align: -0.15em;
       fill: currentColor;
       overflow: hidden;
     }
@@ -90,23 +97,25 @@
       }
     }
   </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <div>
-      <img class="avatar" src="imgs/face@320.jpg">
+      <img class="avatar" src="imgs/face@320.jpg" alt="avatar">
     </div>
     <div class="about-me">
       <h1>Chuangbo Li</h1>
       <p>I am a software developer, a <a class="underline" href="https://en.wikipedia.org/wiki/Cat_people_and_dog_people">cat people</a>, born in China and moved to beautiful <a class="underline" href="http://www.newzealand.com/">New Zealand</a> in 2014.</p>
       <p class="icons">
-        <a href="https://twitter.com/chuangbo">
+        <a href="https://twitter.com/chuangbo" title="Twitter">
           <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
         </a>
-        <a href="https://github.com/chuangbo">
+        <a href="https://github.com/chuangbo" title="GitHub">
           <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
         </a>
-        <a href="mailto:im@chuangbo.li">
+        <a href="mailto:im@chuangbo.li" title="Email">
           <svg class="icon" role="img" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M114.3 118.3h800.5c54.6 0 99.3 43.6 100.0 97.0L514.8 490.0 14.7 215.7c0.4-53.6 44.8-97.4 99.6-97.4z m-99.6 202.4l-0.4 485.4c0 54.0 45.0 98.2 100.0 98.2h800.5c55.0 0 100.0-44.1 100.0-98.2V320.6L526.6 582.3c-7.5 4.0-16.5 4.0-23.9 0l-487.9-261.4z"></path></svg>
         </a>
       </p>
